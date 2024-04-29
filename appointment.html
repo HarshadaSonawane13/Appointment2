@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Booking</title>
+</head>
+<body>
+    <h1>Doctor Appointment Booking</h1>
+    <form action="/bookAppointment" method="post">
+        <label for="doctor">Choose a Doctor:</label>
+        <select name="doctor" id="doctor">
+            <option value="1">Dr. Smith</option>
+            <option value="2">Dr. Johnson</option>
+            <!-- Add more doctors here -->
+        </select>
+        <br>
+        <label for="time">Choose Appointment Time:</label>
+        <input type="datetime-local" id="time" name="time">
+        <br>
+        <label for="patient">Your Name:</label>
+        <input type="text" id="patient" name="patient">
+        <br>
+        <button type="submit">Book Appointment</button>
+    </form>
+</body>
+</html>
